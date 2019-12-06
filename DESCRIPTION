@@ -1,0 +1,11 @@
+Package: owd
+Type: Package
+Title: Open Working Directory
+Version: 0.1
+Date: 2019-12-06
+Author: Benjamin Feakins
+Maintainer: Benjamin Feakins <benjamin.feakins@ndph.ox.ac.uk>
+Description: Function opens the current working directory in your computer's file manager
+License: MIT
+RoxygenNote: 7.0.2
+Encoding: UTF-8

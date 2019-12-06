@@ -1,14 +1,14 @@
-#===================#
-#                   #
-#### OWD PACKAGE ####
-#                   #
-#===================#
+#' Function opens the current working directory in your computer's file manager
+#'
+#' @author Benjamin Feakins, \email{benjamin.feakins@ndph.ox.ac.uk}
+#' 
+#' @examples
+#' owd()
+#' 
+#' @export
+#'
 
-# Hidden Environment #
-.env <- new.env()
-
-# Open File Manager to Current Directory #
-.env$o <- function(...){
+owd <- function(...){
   if(Sys.info()['sysname'] == 'Linux'){
     system('nautilus .', ignore.stderr = T, wait = F)
   }
@@ -19,4 +19,3 @@
     system('start .', wait = F)
   }
 }
-
