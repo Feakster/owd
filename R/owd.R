@@ -28,7 +28,7 @@ owd <- function(){
     system('open .', ignore.stdout = T, ignore.stderr = T, wait = F)
   } else if(Sys.info()[['sysname']] == 'Windows'){
     ## Windows ##
-    system('start .', ignore.stdout = T, ignore.stderr = T, wait = F)
+    shell.exec(".")
   } else {
     stop('Operating system not supported!')
   }
