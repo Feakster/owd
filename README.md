@@ -2,6 +2,7 @@
 
 <!-- Badges -->
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://choosealicense.com/licenses/mit/)
+![platform-suport](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
 ## Description
