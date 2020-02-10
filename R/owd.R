@@ -1,14 +1,10 @@
-#' Function opens the current working directory in your computer's file manager
-#'
-#' @author Benjamin Feakins, \email{benjamin.feakins@ndph.ox.ac.uk}
-#' 
-#' @examples
-#' owd()
-#' 
-#' @export
-#'
+#==============================#
+#                              #
+#### OPEN WORKING DIRECTORY ####
+#                              #
+#==============================#
 
-### owd() ###
+### Function ###
 owd <- function(){
   if(Sys.info()[['sysname']] == 'Linux'){
     ## Linux ##
@@ -21,7 +17,7 @@ owd <- function(){
     file.man <- file.man[sapply(file.man, function(x){Sys.which(x) != ''})]
     if(length(file.man) == 0) stop('File manager not supported!')
     # File Manager Preferred in $PATH (Ties Resolved as Initial Order Above) #
-    file.man <- file.man[which.min(sapply(file.man, function(x){which.max(file_test("-f", file.path(Sys.path, x)))}))]
+    file.man <- file.man[which.min(sapply(file.man, function(x){which.max(utils::file_test("-f", file.path(Sys.path, x)))}))]
     system(paste(file.man, "."), ignore.stdout = T, ignore.stderr = T, wait = F)
   } else if(Sys.info()[['sysname']] == 'Darwin'){
     ## macOS ##

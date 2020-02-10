@@ -1,11 +1,14 @@
 Package: owd
-Type: Package
+Version: 0.0.0.9000
+Date: 2020-02-10
 Title: Open Working Directory
-Version: 0.1
-Date: 2019-12-06
-Author: Benjamin Feakins
-Maintainer: Benjamin Feakins <benjamin.feakins@ndph.ox.ac.uk>
-Description: Function opens the current working directory in your computer's file manager
-License: MIT
-RoxygenNote: 7.0.2
+Authors@R: person(c("Benjamin", "G."), "Feakins",
+                  role = c("aut", "cre"),
+                  email = "benjamin.feakins@ndph.ox.ac.uk",
+                  comment = c(ORCID = "0000-0002-3928-6750"))
+Description: Function that opens the current working directory in your computer's file manager.
+Imports: utils
+License: MIT + file LICENSE
+URL: https://github.com/Feakster/owd
+BugReports: https://github.com/Feakster/owd/issues
 Encoding: UTF-8
