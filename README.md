@@ -1,31 +1,39 @@
-# owd
+# owd: Open Working Directory
 
 <!-- Badges -->
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://choosealicense.com/licenses/mit/)
-[![platform-suport](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey)](https://en.wikipedia.org/wiki/Computing_platform)
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 ## Description
-R package to open the current working directory in a computer's file manager.
+
+R package to open the current working directory (or a given directory path) in your computer&rsquo;s file manager.
 
 ## Installation
 
 You can install the development version from [GitHub](https://github.com/Feakster/owd) with:
 
 ```R
-if (!{"devtools" %in% installed.packages()[, "Package"]}) install.packages("devtools")
-devtools::install_github("Feakster/owd")
+if (!{'devtools' %in% installed.packages()}) install.packages('devtools')
+devtools::install_github('Feakster/owd')
 ```
 
 ## Examples
-To open your current R working directory in your computer's file manager, simply run the following:
+
+Some simple use cases:
 
 ```R
-### Load Package Namespace ###
+## Load package namespace
 library(owd)
 
-### Open Working Directory ###
+## Open current working directory
 owd()
+
+## Open a relative directory ('foo')
+owd('foo') # or...
+owd('./foo')
+
+## Making use of tilde expansion
+owd('~/foo')
 ```
 ## Known issues
 

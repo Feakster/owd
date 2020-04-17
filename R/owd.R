@@ -5,27 +5,34 @@
 #==============================#
 
 ### Function ###
-owd <- function(){
-  if(Sys.info()[['sysname']] == 'Linux'){
-    ## Linux ##
-    # Extract System $PATH #
-    Sys.path <- Sys.getenv()[['PATH']]
-    Sys.path <- unlist(strsplit(Sys.path, split = ":"))
-    # Possible File Managers #
-    file.man <- c('nautilus', 'konqueror', 'dolphin', 'pcmanfm', 'nemo', 'thunar', 'krusader')
-    # File Managers Present #
-    file.man <- file.man[sapply(file.man, function(x){Sys.which(x) != ''})]
-    if(length(file.man) == 0) stop('File manager not supported!')
-    # File Manager Preferred in $PATH (Ties Resolved as Initial Order Above) #
-    file.man <- file.man[which.min(sapply(file.man, function(x){which.max(utils::file_test("-f", file.path(Sys.path, x)))}))]
-    system(paste(file.man, "."), ignore.stdout = T, ignore.stderr = T, wait = F)
-  } else if(Sys.info()[['sysname']] == 'Darwin'){
-    ## macOS ##
-    system('open .', ignore.stdout = T, ignore.stderr = T, wait = F)
-  } else if(Sys.info()[['sysname']] == 'Windows'){
-    ## Windows ##
-    shell.exec('.')
+owd <- function(dir = '.') {
+  
+  ## Checks ##
+  if (length(dir) != 1L) stop('Only one directory path may be specified.')
+  if (!dir.exists(dir)) stop('Directory not found.')
+  if (file.access(dir, 4L) != 0L) stop('You do not have permission to access this directory.')
+  
+  ## Path Expansion ##
+  dir = normalizePath(dir)
+  
+  ## OS Differences ##
+  if (.Platform[['OS.type']] == 'unix') {
+    
+    command <- if (Sys.info()[['sysname']] == 'Darwin') 'open' else 'xdg-open'
+    
+    # Output #
+    return(system2(command, dir, stdout = FALSE, stderr = FALSE, wait = FALSE))
+    
+  } else if (Sys.info()[['sysname']] == 'Windows') {
+    
+    # Output #
+    return(shell.exec(dir))
+    
   } else {
+    
+    ## Unsupported OS ##
     stop('Operating system not supported!')
+    
   }
+  
 }

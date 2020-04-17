@@ -3,7 +3,7 @@ note <- sprintf("R package version %s", meta$Version)
 url <- meta$URL
 
 bibentry(bibtype = "Manual",
-         title = "{owd}: A Package to Open Your Current Working Directory From R",
+         title = "{owd: A Package to Open Your Current Working Directory From R}",
          author = person(c("Benjamin", "G."), "Feakins"),
          year = year,
          note = note,
