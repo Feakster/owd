@@ -10,11 +10,11 @@ owd(dir)
 \arguments{
   \item{dir}{A character string indicating a directory path. Defaults to \code{'.'}, indicating the current working directory.}
 }
-\details{
-  Tilde expansion (see \link{path.expand}) is performed on directory paths.
-}
 \value{
-  \code{owd} does not return any value in \R. However, it will return an error if if a directory is passed to it that does not exist, or that \R does not have sufficient privledges to access.
+  \code{owd} does not return any value in \R. However, it will return an error if a directory path is passed to it that does not exist, or that \R does not have sufficient privledges to access.
+}
+\note{
+  Tilde expansion (see \link{path.expand}) is performed on directory paths.
 }
 \author{
   Benjamin G. Feakins, \email{benjamin.feakins@ndph.ox.ac.uk}
@@ -28,7 +28,7 @@ owd(dir)
 ## Open current working directory
 \dontrun{owd()}
 
-## Open a relative directory ('foo')
+## Open a directory ('foo') using a relative path
 \dontrun{owd('foo')} # or...
 \dontrun{owd('./foo')}
 

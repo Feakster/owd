@@ -28,13 +28,14 @@ library(owd)
 ## Open current working directory
 owd()
 
-## Open a relative directory ('foo')
+## Open a directory ('foo') using a relative path
 owd('foo') # or...
 owd('./foo')
 
 ## Making use of tilde expansion
 owd('~/foo')
 ```
+
 ## Known issues
 
 See [Issues](https://github.com/Feakster/owd/issues) on the owd GitHub repository.

@@ -31,7 +31,7 @@ owd <- function(dir = '.') {
   } else {
     
     ## Unsupported OS ##
-    stop('Operating system not supported!')
+    stop('Operating system not supported.')
     
   }
   
