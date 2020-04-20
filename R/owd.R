@@ -13,7 +13,7 @@ owd <- function(dir = '.') {
   if (file.access(dir, 4L) != 0L) stop('You do not have permission to access this directory.')
   
   ## Path Expansion ##
-  dir = normalizePath(dir)
+  dir <- normalizePath(dir)
   
   ## OS Differences ##
   if (.Platform[['OS.type']] == 'unix') {
