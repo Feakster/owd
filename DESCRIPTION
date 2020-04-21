@@ -1,11 +1,12 @@
 Package: owd
-Version: 1.0.0
-Date: 2020-04-20
+Version: 1.0.1
+Date: 2020-04-21
 Title: Open Working Directory
 Authors@R: c(person(c("Benjamin", "G."), "Feakins", role = c("aut", "cre"), email = "benjamin.feakins@ndph.ox.ac.uk", comment = c(ORCID = "0000-0002-3928-6750")),
              person(c("Benjamin", "J."), "Cairns", role = "ctb", email = "ben.cairns@ndph.ox.ac.uk", comment = c(ORCID = "0000-0001-7994-8213")),
              person("University of Oxford", role = c("cph", "sht")))
 Description: Open the current working directory (or a given directory path) in your computer's file manager.
+Depends: R (>= 2.13)
 License: MIT + file LICENSE
 URL: https://github.com/Feakster/owd
 BugReports: https://github.com/Feakster/owd/issues
