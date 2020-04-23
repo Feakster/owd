@@ -13,7 +13,7 @@ R package to open the current working directory (or a given directory path) in y
 
 ## Compatibility
 
-The package may be installed on any version of R since 2.13.0, in which the `normalizePath()` function was moved from the _utils_ package to the _base_ package. Technically, for versions 2.13.0 > R &ge; 2.1.0 the package may still be installed if the end user was to checkout the Git repository and add one line containing &ldquo;`Imports: utils`&rdquo; to the DESCRIPTION file, and one line containing &ldquo;`importsFrom(utils, normalizePath)`&rdquo; to the NAMESPACE file.
+The package may be installed on any version of R since 2.13.0, (coinciding with the migration of the `normalizePath()` function from the _utils_ package to the _base_ package). Technically, for versions 2.13.0 > R &ge; 2.1.0 the package may still be installed if the end user was to: checkout the Git repository, remove the line containing &ldquo;`Depends: R (>= 2.13)`&rdquo; from the DESCRIPTION file, add a line to the DESCRIPTION file containing &ldquo;`Imports: utils`&rdquo;, and add a line to the NAMESPACE file containing &ldquo;`importsFrom(utils, normalizePath)`&rdquo;.
 
 ## Installation
 
