@@ -5,7 +5,7 @@
   \code{owd} opens the current working directory (or a given directory path) in your computer's file manager.
 }
 \usage{
-owd(dir)
+owd(dir = '.')
 }
 \arguments{
   \item{dir}{A character string indicating a directory path. Defaults to \code{'.'}, indicating the current working directory.}
@@ -26,14 +26,24 @@ owd(dir)
 }
 \examples{
 ## Open current working directory
-\dontrun{owd()}
+owd()
 
 ## Open a directory ('foo') using a relative path
-\dontrun{owd('foo')} # or...
-\dontrun{owd('./foo')}
+#ifdef unix
+owd("/usr/bin")
+#endif
+#ifdef windows
+owd("C:/Windows")
+#endif
 
-## Making use of tilde expansion
-\dontrun{owd('~/foo')}
+#ifdef unix
+## Making use of tilde expansion to open Documents
+owd('~/Documents')
+#endif
+#ifdef windows
+## Making use of tilde expansion to open My Documents
+owd('~')
+#endif
 }
 \keyword{IO}
 \keyword{file}

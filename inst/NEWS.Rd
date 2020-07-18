@@ -1,5 +1,10 @@
 \name{NEWS}
 \title{NEWS file for the owd pacakge}
+\section{Changes in version 1.0.3}{
+  \itemize{
+    \item Altered the examples to make them executable.
+  }
+}
 \section{Changes in version 1.0.2}{
   \itemize{
     \item Modified the capitalisation in the package citation.
