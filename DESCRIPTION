@@ -7,6 +7,7 @@ Authors@R: c(person(c("Benjamin", "G."), "Feakins", role = c("aut", "cre"), emai
              person("University of Oxford", role = c("cph", "sht")))
 Description: Open the current working directory (or a given directory path) in your computer's file manager.
 Depends: R (>= 2.13)
+Suggests: tinytest
 License: MIT + file LICENSE
 URL: https://github.com/Feakster/owd
 BugReports: https://github.com/Feakster/owd/issues

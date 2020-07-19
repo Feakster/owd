@@ -5,3 +5,4 @@
 ^ToDo$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
