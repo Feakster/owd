@@ -28,22 +28,21 @@ owd(dir = '.')
 ## Open current working directory
 owd()
 
-## Open a directory ('foo') using a relative path
+## Open a directory using a relative path
 #ifdef unix
-owd("/usr/bin")
+owd('/usr/bin')
 #endif
 #ifdef windows
-owd("C:/Windows")
+owd('C:/Windows')
 #endif
 
 #ifdef unix
-## Making use of tilde expansion to open Documents
-owd('~/Documents')
+## Making use of tilde expansion to open the home directory
 #endif
 #ifdef windows
 ## Making use of tilde expansion to open My Documents
-owd('~')
 #endif
+owd('~')
 }
 \keyword{IO}
 \keyword{file}

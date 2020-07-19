@@ -1,5 +1,10 @@
 \name{NEWS}
-\title{NEWS file for the owd pacakge}
+\title{NEWS file for the owd package}
+\section{Changes in version 1.0.4}{
+  \itemize{
+    \item Altered examples to allow for the fact that the '~/Documents' directory may not be present on all Unix systems.
+  }
+}
 \section{Changes in version 1.0.3}{
   \itemize{
     \item Altered the examples to make them executable.
