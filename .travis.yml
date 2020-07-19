@@ -1,0 +1,16 @@
+language: r
+r:
+  - release
+  - devel
+
+repos:
+  CRAN: https://cloud.r-project.org
+
+branches:
+  only:
+    - "master"
+
+os:
+  - linux
+  - osx
+  - windows
