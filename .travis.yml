@@ -12,5 +12,3 @@ branches:
 
 os:
   - linux
-  - osx
-  - windows
