@@ -3,6 +3,8 @@
 ^README\.html$
 ^README\.md$
 ^ToDo$
+^\.github/*
+^\.gitignore$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.travis\.yml$
