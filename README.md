@@ -4,8 +4,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://choosealicense.com/licenses/mit/)
 [![platform-support](https://img.shields.io/badge/R-%3E%3D2.13.0-blue)](https://www.r-project.org/)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![travis-ci](https://travis-ci.org/Feakster/owd.svg?branch=master)](https://travis-ci.org/Feakster/owd)
-[![github-ci](https://github.com/Feakster/owd/workflows/R-CMD-check/badge.svg)](https://github.com/Feakster/owd/workflows/R-CMD-check/badge.svg)
+[![github-workflow](https://github.com/Feakster/owd/workflows/R-CMD-check/badge.svg)](https://github.com/Feakster/owd/actions)
 <!--[![CRANstatus](https://www.r-pkg.org/badges/version/owd)](https://cran.r-project.org/package=owd)-->
 <!--[![CRANdownloads](https://cranlogs.r-pkg.org/badges/grand-total/owd)](https://cran.r-project.org/package=owd)-->
 
