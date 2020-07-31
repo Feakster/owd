@@ -1,6 +1,6 @@
 Package: owd
-Version: 1.0.4
-Date: 2020-07-19
+Version: 1.0.5
+Date: 2020-07-31
 Title: Open Working Directory
 Authors@R: c(person(c("Benjamin", "G."), "Feakins", role = c("aut", "cre"), email = "benjamin.feakins@ndph.ox.ac.uk", comment = c(ORCID = "0000-0002-3928-6750")),
              person(c("Benjamin", "J."), "Cairns", role = "ctb", email = "ben.cairns@ndph.ox.ac.uk", comment = c(ORCID = "0000-0001-7994-8213")),
