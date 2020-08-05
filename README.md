@@ -27,8 +27,8 @@ install.packages("owd")
 Alternatively, you can install the latest development version from [GitHub](https://github.com/Feakster/owd) with:
 
 ```R
-if (!{'devtools' %in% installed.packages()}) install.packages('devtools')
-devtools::install_github('Feakster/owd')
+if (!{'remotes' %in% installed.packages()}) install.packages('remotes')
+remotes::install_github('Feakster/owd')
 ```
 
 ## Examples
