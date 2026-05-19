@@ -1,5 +1,11 @@
 \name{NEWS}
 \title{NEWS file for the owd package}
+\section{Changes in version 1.0-7}{
+  \itemize{
+    \item Tweaked the text in the package citation.
+    \item Updated the contact details of the maintainer.
+  }
+}
 \section{Changes in version 1.0.6}{
   \itemize{
     \item Tweaked the appearance of the package citation. The URL now points to CRAN as opposed to GitHub.

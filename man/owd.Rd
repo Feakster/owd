@@ -17,7 +17,7 @@ owd(dir = '.')
   Tilde expansion (see \link{path.expand}) is performed on directory paths.
 }
 \author{
-  Benjamin G. Feakins, \email{benjamin.feakins@ndph.ox.ac.uk}
+  Benjamin G. Feakins, \email{feakster@posteo.eu}
 }
 \seealso{
   \code{\link{getwd}} for the path of the current working directory.
